@@ -1,0 +1,13 @@
+discord.Connect(TOKEN);
+discordapi.Connect('Your application ID');
+
+discord.Set[prefix, !];
+discord.Set[discriminator, user.getDisc]
+
+discord.new(command, ping);
+
+discord.Command = config(ping) {
+   when msgc = [prefix]ping {
+      discord.Send("pong")
+   };
+};
